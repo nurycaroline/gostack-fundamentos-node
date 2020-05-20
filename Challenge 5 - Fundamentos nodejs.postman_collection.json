@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "2a6f6d24-a13f-407b-9eb1-ac014c7d58ed",
+		"name": "Challenge 5 - Fundamentos nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/transactions",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Salário\",\n  \"value\": 3000,\n  \"type\": \"outcome\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/transactions",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
